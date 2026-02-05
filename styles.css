@@ -1,0 +1,187 @@
+:root {
+    --branco-principal: #ffffff;
+    --bordo-secundario: #8E2424;
+    --cinza-secudario: #667085;
+    --fonte-principal: 'Inter', sans-serif;
+    --preto-principal: #101828;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0 3%;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.navbar__menu {
+    display: flex;
+    margin: 1em 3em;
+    gap: 9em;    
+}
+
+.navbar__opcoes {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2em;
+    text-decoration: none;
+    color: var(--cinza-secudario);
+}
+
+.navbar__login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    gap: 3em;
+}
+
+.navbar__login__cadastrar {
+    background-color: var(--bordo-secundario);
+    border-radius: 5px;
+    padding: 0.8em 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+}
+
+.lista__item {
+    color: var(--cinza-secudario);
+    text-decoration: none;
+}
+
+
+/* Section Sobre Nós */
+
+.section__sobre {
+    margin: 12em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 22%;
+    gap: 2em;
+}
+
+.section__sobre h3 {
+    color: var(--bordo-secundario);
+    font-size: 24px;
+}
+
+.section__sobre h1 {
+    color: var(--preto-principal);
+    font-size: 60px;
+}
+
+.section__sobre p {
+    color: var(--cinza-secudario);
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* Section sobre Valores */
+
+.section__valores {
+    margin: 0 5em;
+}
+
+.section__valores ul {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+}
+
+.section__valores__lista {
+    text-decoration: none;
+    list-style: none;
+    width: 280px;
+}
+
+.section__valores__qtd {
+    color: var(--bordo-secundario);
+    font-size: 60px;
+    margin-bottom: 12px;
+}
+
+.section__valores__titulo {
+    color: var(--preto-principal);
+    font-size: 20px;
+    margin: .4em 0;
+    font-weight: 500;
+}
+
+.section__valores__texto {
+    color: var(--cinza-secudario);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Section Vagas Abertas */
+
+.section__vagas-abertas {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.vagas-abertas {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border-radius: 50px;
+    color: var(--bordo-secundario);
+    background-color: #8e242420;
+}
+
+.section__vagas-abertas__talentos {
+    font-size: 40px;
+    color: var(--preto-principal);
+}
+
+.section__vagas-abertas__texto {
+    font-size: 24px;
+    color: var(--cinza-secudario);
+    font-weight: 500;
+}
+
+.section__vagas-abertas__img {
+    margin-top: 2.5em;
+}
+
+/* Section Sobre Vagas */
+
+.section__vagas {
+    margin: 64px auto 64px auto;
+    width: 768px;
+}
+
+.section__vagas__titulo {
+    font-size: 24px;
+    margin-bottom: 32px;
+    margin-top: 68px;
+}
+
+.section__vagas__disponivel {
+    list-style-type: none;
+    padding: 24px;
+    gap: 24px;
+    border: solid 2px #f6f7f9;
+    border-radius: 24px;
+    margin-bottom: 24px;   
+}
+
+.section__vagas__disponivel h3 {
+    margin-bottom: 32px;
+}
+
+.section__vagas__disponivel__descricao {
+    color: var(--cinza-secudario);
+}
