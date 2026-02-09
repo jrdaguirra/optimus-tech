@@ -12,7 +12,7 @@
 }
 
 body {
-    padding: 0 3%;
+    /*padding: 0 3%;*/
     font-family: 'Inter';
     font-weight: 500;
 }
@@ -184,4 +184,98 @@ body {
 
 .section__vagas__disponivel__descricao {
     color: var(--cinza-secudario);
+}
+
+/* Seção Veja o que os colaboradores falam sobre nós */
+
+.section__feedback__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+
+
+    width: 80%;
+    margin: 0 auto 96px auto;
+    padding: 64px;
+    background-color: #8e242420;    
+    border-radius: 12px;
+}
+
+.section__feedback__veja {
+    color: var(--bordo-secundario);
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.section__feedback__comentario {
+    color: var(--preto-principal);
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.section__feedback__foto {
+    margin-bottom: 16px;
+}
+
+.section__feedback__nome {
+    font-size: 18px;
+    color: var(--preto-principal);
+    margin-bottom: 4px;
+}
+
+.section__feedback__cargo {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--cinza-secudario);
+}
+
+/* Footer */
+
+.footer__acompanhe {
+    background-color: #D0D5DD20;
+    padding: 96px 304px;
+    text-align: center;
+    align-items: center;
+}
+
+.footer__acompanhe__acompanhe {
+    margin-bottom: 20px;
+}
+
+.footer__acompanhe__texto {
+    color: var(--cinza-secudario);
+    margin-bottom: 40px;
+}
+
+.footer__email {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.footer__email__input {
+    height: 48px;
+    border: #D0D5DD solid 1px;
+    border-radius: 9px;
+    padding: 0 16px;
+    width: 360px;
+}   
+
+.footer__acompanhe__cadastrar {
+    text-decoration: none;
+    background-color: var(--bordo-secundario);
+    color: var(--branco-principal);
+    padding: 0.8em 1em;
+    border-radius: 5px;
+}
+
+.footer__direitos {
+    color: var(--cinza-secudario);
+    margin-top: 40px;
+    font-size: 14px;
 }
