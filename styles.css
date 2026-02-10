@@ -11,16 +11,25 @@
     padding: 0;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     /*padding: 0 3%;*/
     font-family: 'Inter';
     font-weight: 500;
+    max-width: 100vw;
 }
 
 .navbar__menu {
     display: flex;
-    margin: 1em 3em;
-    gap: 9em;    
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 2em;
+    margin: 16px;
 }
 
 .navbar__opcoes {
@@ -65,7 +74,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 22%;
+    padding: 0 16px;
+    max-width: 900px;
+    margin: 8em auto;
     gap: 2em;
 }
 
@@ -88,19 +99,31 @@ body {
 /* Section sobre Valores */
 
 .section__valores {
-    margin: 0 5em;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .section__valores ul {
-    display: flex;
+    /*display: flex;
     gap: 5em;
-    justify-content: center;
+    justify-content: center;*/
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    justify-items: center;
 }
 
 .section__valores__lista {
-    text-decoration: none;
+    /*text-decoration: none;
     list-style: none;
-    width: 280px;
+    width: 280px;*/
+
+    
+    width: 100%;
+    max-width: 280px;
+    list-style: none;
+
 }
 
 .section__valores__qtd {
@@ -131,6 +154,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2em;
+    padding: 16px;
 }
 
 .vagas-abertas {
@@ -154,13 +178,16 @@ body {
 
 .section__vagas-abertas__img {
     margin-top: 2.5em;
+    max-width: 80vw;
 }
 
 /* Section Sobre Vagas */
 
 .section__vagas {
     margin: 64px auto 64px auto;
-    width: 768px;
+    max-width: 768px;
+    width: 100%;
+    padding: 0 16px;
 }
 
 .section__vagas__titulo {
@@ -238,9 +265,11 @@ body {
 
 .footer__acompanhe {
     background-color: #D0D5DD20;
-    padding: 96px 304px;
+    padding-left: 16px;
+    padding-right: 16px;
     text-align: center;
     align-items: center;
+    padding: 46px 0;
 }
 
 .footer__acompanhe__acompanhe {
@@ -278,4 +307,29 @@ body {
     color: var(--cinza-secudario);
     margin-top: 40px;
     font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    .section__valores ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .section__valores ul {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .navbar__opcoes,
+    .navbar__login {
+        flex-direction: column;
+        gap: 1em;
+        margin-left: 0;
+    }
 }
