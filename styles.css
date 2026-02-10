@@ -332,4 +332,12 @@ body {
         gap: 1em;
         margin-left: 0;
     }
+
+    .section__feedback__comentario {
+        font-size: 24px;
+    }
+
+    .footer__email {
+        padding: 0 16px;
+    }
 }
